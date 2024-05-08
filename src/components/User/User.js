@@ -8,6 +8,7 @@ const EditUser = () => {
   const getUserApi ="https://xicotencatl-usuarios-api.azurewebsites.net";
   useEffect(() => {
     getUser();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getUser = () => {
