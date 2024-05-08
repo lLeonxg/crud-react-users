@@ -4,7 +4,7 @@ import Loader from '../Common/Loader';
 import './User.css';
 const CreateUser = () => {
     const navigate = useNavigate();
-    const createUserApi = "http://localhost:3001/usuarios/"
+    const createUserApi ="https://xicotencatl-usuarios-api.azurewebsites.net";
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const [user, setUser] = useState({
@@ -58,7 +58,7 @@ const CreateUser = () => {
             <form onSubmit={handelSubmit}>
                 <div className="mb-3">
                     <label for="nombre" className="form-label">Nombre</label>
-                    <input type="text" className="form-control" id="nombre" name="nombre" value={user.name} onChange={handelInput} />
+                    <input type="text" className="form-control" id="nombre" name="nombre" value={user.nombre} onChange={handelInput} />
                 </div>
                 <div className="mb-3 mt-3">
                     <label for="email" className="form-label">Email</label>

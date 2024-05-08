@@ -5,8 +5,7 @@ import "./User.css";
 const EditUser = () => {
   const [user, setUser] = useState([]);
   const { id } = useParams();
-  const getUserApi = "http://localhost:3001/usuarios";
-
+  const getUserApi ="https://xicotencatl-usuarios-api.azurewebsites.net";
   useEffect(() => {
     getUser();
   }, []);
@@ -34,7 +33,7 @@ const EditUser = () => {
     </thead>
     <tbody>
       <tr>
-        <td>Name</td>
+        <td>nombre</td>
         <td>{user.nombre}</td>
       </tr>
       <tr>
